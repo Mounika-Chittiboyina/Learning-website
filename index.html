@@ -4,7 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Course Landing Page</title>
-  
+
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    /* ===== Headings & Paragraphs ===== */
+    h1 {
+      color: #ff4b5c;  /* Red-Pink */
+      text-transform: uppercase;
+    }
+    h2 {
+      color: #162447;  /* Dark Navy */
+    }
+    p {
+      color: #444;
+      font-size: 1rem;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #162447);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header a {
+      color: #fff;
+      background: #e43f5a;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    header a:hover {
+      background: #d63447;
+    }
+    header img {
+      max-width: 400px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 4px solid #e43f5a;
+    }
+
+    /* ===== Section Styling (group + descendant selectors) ===== */
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section#features ul li {
+      background: #eee;
+      margin: 8px 0;
+      padding: 10px;
+      border-left: 5px solid #ff4b5c;
+      border-radius: 5px;
+    }
+
+    /* ===== Instructor Section (id selector) ===== */
+    #instructor {
+      background: #f1f1f1;
+      border-left: 5px solid #162447;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* ===== Testimonials Section (class selector demo) ===== */
+    blockquote {
+      background: #fff;
+      border-left: 4px solid #ff4b5c;
+      padding: 15px;
+      margin: 10px 0;
+      font-style: italic;
+      border-radius: 5px;
+    }
+
+    /* ===== Enroll Section ===== */
+    #enroll {
+      background: #162447;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      padding: 40px 20px;
+    }
+    #enroll p {
+      color: #ddd; /* Overriding normal paragraph color */
+    }
+    #enroll form {
+      margin-top: 20px;
+      text-align: left;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      color: black;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    #enroll label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #162447;
+    }
+    #enroll input, #enroll textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    #enroll button {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: 0.3s;
+    }
+    #enroll button:hover {
+      background: #d63447;
+      transform: scale(1.05);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #1a1a2e;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
